@@ -1,4 +1,15 @@
 // Mixins in here
-.buttonStyle(@color, @size){
-    
-}
+.buttonStyle(@color, @textColor){
+        display: flex;
+        width: 80%;
+        box-sizing: border-box;
+        height: 2.5em;
+        font-size: 2em;
+        border: 1px solid ligthen(@color);
+        border-radius: 0.8em;
+        align-items: center;
+        justify-content: center;
+        background-color: @color;
+        color: @textColor;
+      }
+
