@@ -175,11 +175,21 @@ img {
   padding: 20px;
   border-bottom: 2px dashed silver;
 }
+@media (max-width:500px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
 .navbarLinks {
   width: 36%;
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
+}
+@media (max-width:500px) {
+  .navbarLinks {
+    width: 100%;
+  }
 }
 .navbarLinks a {
   text-decoration: none;
@@ -204,11 +214,11 @@ img {
   box-sizing: border-box;
   height: 2.5em;
   font-size: 2em;
-  border: 1px solid ligthen(green);
+  border: 1px solid ligthen(teal);
   border-radius: 0.8em;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  background-color: teal;
   color: white;
 }
 .home .content-section {
