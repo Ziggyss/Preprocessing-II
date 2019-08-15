@@ -6,16 +6,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media(@mobile){
+      flex-direction: column;
+      align-items: center;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media(@mobile){
+        width: 96%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media(@mobile){
+        width: 96%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,24 +37,41 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media(@mobile){
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media(@mobile){
+        width: 96%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media(@mobile){
+        width: 96%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media(@mobile){
+      width: 96%;
+      align-items: center;
+    }
 
     img {
       border-radius: 10px;
+      @media(@mobile){
+        width: 96%;
+      }
     }
   }
 
@@ -52,10 +80,47 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media(@mobile){
+      flex-direction:column;
+      width: 100%;
+      align-items: center;
+
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media(@mobile){
+        width: 80%;
+
+      }
+     
     }
   }
 }// home
+.introduction {
+  .introText {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed silver;
+  }
+}
+
+.contactForm {
+  padding-top: 50px;
+  padding: 20px;
+
+  width: 100%;
+
+  input, textarea, #subject {
+    width: 80%;
+  }
+  font-size: 1.6rem;
+
+  .formBtn {
+    .buttonStyle(teal, white);
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+}
