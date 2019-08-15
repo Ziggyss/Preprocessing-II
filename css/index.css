@@ -382,3 +382,28 @@ img {
   padding-bottom: 20px;
   border-bottom: 2px dashed silver;
 }
+.contactForm {
+  padding-top: 50px;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.6rem;
+}
+.contactForm input,
+.contactForm textarea,
+.contactForm #subject {
+  width: 80%;
+}
+.contactForm .formBtn {
+  width: 80%;
+  box-sizing: border-box;
+  height: 2.5em;
+  font-size: 2em;
+  border: 1px solid ligthen(teal);
+  border-radius: 0.8em;
+  justify-content: center;
+  background-color: teal;
+  color: white;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
